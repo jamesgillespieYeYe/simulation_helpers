@@ -17,15 +17,45 @@ print("Input file:", input_file, ",", "title: ", title)
 
 data = pd.read_csv(input_file, ",")
 length = len(data)
+#Get rid of last two entries as they are from summary at end of file
 data = data.drop([length - 1, length - 2])
 
-sizes = []
+
+
+minEnergy = 999
+minStep = 0
+minTime = 0
+minIndex = 0
 for i in range(0, len(data)):
-    sizes.append(marker_size)
+    row = data.loc[i]
+    energy = row['EPtot']
+    step = row['step']
+    time = row['time']
+    if energy < minEnergy:
+        minEnergy = energy
+        minStep = step
+        minTime = time
+        minIndex = i
+    
+print("Minimum energy occurs at time:", minTime, "step:", minStep, "energy: ", minEnergy)
+
+
+sizes = []
+colors = []
+for i in range(0, len(data)):
+    if (i == minIndex):
+        sizes.append(50)
+        colors.append('red')
+    else:
+        sizes.append(marker_size)
+        colors.append('blue')
+    
+
+
 
 fig = plt.figure()
 ax1 = fig.add_subplot(211)
-ax1.scatter(data['time'], data['EPtot'], sizes)
+ax1.scatter(data['time'], data['EPtot'], sizes,c=colors)
 ax1.set_ylabel("EPtot")
 ax1.set_xlabel("Time")
 

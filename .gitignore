@@ -1,3 +1,4 @@
 *.mdcrd
 *.out
 out
+*.csv
