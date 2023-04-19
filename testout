@@ -1,0 +1,10 @@
+ NSTEP =      500   TIME(PS) =      51.000  TEMP(K) =   314.25  PRESS =     0.0
+ Etot   =      -181.0153  EKtot   =       237.9246  EPtot      =      -418.9399
+ NSTEP =     1000   TIME(PS) =      52.000  TEMP(K) =   301.03  PRESS =     0.0
+ Etot   =      -183.3032  EKtot   =       227.9124  EPtot      =      -411.2155
+ NSTEP =     1500   TIME(PS) =      53.000  TEMP(K) =   307.64  PRESS =     0.0
+ Etot   =      -181.5497  EKtot   =       232.9177  EPtot      =      -414.4674
+ NSTEP =     2000   TIME(PS) =      54.000  TEMP(K) =   301.42  PRESS =     0.0
+ Etot   =      -185.3612  EKtot   =       228.2126  EPtot      =      -413.5738
+ NSTEP =     2500   TIME(PS) =      55.000  TEMP(K) =   333.91  PRESS =     0.0
+ Etot   =      -186.9029  EKtot   =       252.8062  EPtot      =      -439.7091

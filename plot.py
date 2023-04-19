@@ -63,4 +63,18 @@ ax2 = fig.add_subplot(212)
 ax2.scatter(data['time'], data['temp'], sizes)
 ax2.set_ylabel("Temperature")
 ax2.set_xlabel("Time")
+
+
+secondFig = plt.figure()
+secondAx1 = secondFig.add_subplot(211)
+secondAx2 = secondFig.add_subplot(212)
+bound = 50
+secondAx1.plot(data['time'][minIndex-bound:minIndex+bound], data['EPtot'][minIndex-bound:minIndex+bound])
+
+secondAx2.plot(data['time'][minIndex-bound:minIndex+bound], data['temp'][minIndex-bound:minIndex+bound])
+
+
+thirdFig = plt.figure()
+ax = thirdFig.add_subplot(111)
+ax.scatter(data['temp'], data['EPtot'])
 plt.show()
