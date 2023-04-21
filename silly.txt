@@ -1,0 +1,5 @@
+2 is an even prime number.
+3 is a crowd.
+1 is next to a prime.
+5 is first odd number after 4.
+4 is just added here for completeness sake.

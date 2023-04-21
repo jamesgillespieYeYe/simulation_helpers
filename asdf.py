@@ -9,6 +9,9 @@ input_filename = "energy.log"
 
 outfile_name = 'asdf.tmp'
 
+dict_filenames = "dict_filenames.log"
+dict_stages = "dict_stages.log"
+
 f = open(input_filename, 'r')
 lines = f.readlines()
 
@@ -35,4 +38,14 @@ for line in lines:
         o.write(line)
         o.close()
 
+
+d = open(dict_filenames, "w")
+for i in range(0, len(names)):
+    name = names[i]
+    d.write(name + '\n')
+d.close()
+d = open(dict_stages, "w")
+for i in range(0, len(delims)):
+    delim = delims[i]
+    d.write(delim)
 f.close()

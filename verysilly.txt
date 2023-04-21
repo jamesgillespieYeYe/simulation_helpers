@@ -1,0 +1,5 @@
+num 2 is an even prime number.
+num 3 is a crowd.
+num 1 is next to a prime.
+num 5 is first odd number after 4.
+num 4 is just added here for completeness sake.
